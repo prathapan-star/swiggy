@@ -1,0 +1,12 @@
+img {
+    width:auto;
+    height: 220px;
+}
+#demo {
+    display:flex;
+    gap:15px;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}

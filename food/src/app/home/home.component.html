@@ -1,0 +1,56 @@
+<!-- <p>home works!</p>
+<div class="container custom-container-2 mt-5"> -->
+    <!-- Show it when there is no employee
+    <div class="no-data text-center" *ngIf="Admins.length == 0">
+        <p>There is no Restaurant added yet !</p>
+        <button type="submit" class="btn btn-outline-primary" routerLink="/admin">
+            Add Restaurant
+        </button>
+    </div>
+    <div *ngIf="Admins.length != 0">
+        <h3 class="mb-3 text-center">Resturant-List</h3>
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">User-ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Locations</th>
+                        <th scope="col">Ratings</th>
+                        <th scope="col">Images</th>
+                        <th scope="col">Cusinies</th>
+                        <th>Actions</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let e of Admins">
+                        <td>{{e.id}}</td>
+                        <td>{{e.name}}</td>
+                        <td>{{e.location}}</td>
+                        <td>{{e.rating}}</td>
+                        <td><img src='{{e.img}}'></td>
+                        <td>{{e.cuisines}}</td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> -->
+<div id="demo">
+<div *ngFor="let e of Admins">
+    <div class="card" style="width: 220px; height: 300px;">
+        <img class="card-img-top" src="{{e.img}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{e.name}}</h5>
+          <p class="card-text">{{e.location}}</p>
+          <p class="card-text">{{e.cuisines}}</p>
+          
+          <button (click)="openBootstrapModal(e)" class="btn btn-secondary">view more</button>
+          <!-- <a href="#" class="btn btn-primary">view more</a> -->
+        </div>
+      </div>
+</div>
+</div>
+

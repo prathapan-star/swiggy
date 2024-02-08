@@ -1,0 +1,5 @@
+<div class="container">
+    <form [formGroup]="searchForm">
+        <input type="text" formControlName="searchText" (keyup)="onSearchTextChange($event)" placeholder="Serach here">
+    </form>
+</div>

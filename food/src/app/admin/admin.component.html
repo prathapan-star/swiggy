@@ -1,0 +1,41 @@
+<div class="container custom-container mb-5">
+    <div class="col-md-12">
+        <h3 class="mb-3 text-center">Create Restaurant</h3>
+
+        <div class="mb-3">
+            <input type="text" [(ngModel)]="RestDetails.name" class="form-control" placeholder="Restaurant Name">
+        </div>
+        <div class="mb-3">
+            <input type="text" [(ngModel)]="RestDetails.location" class="form-control" placeholder="Locations">
+        </div>
+        <div class="mb-3">
+            <input type="number" [(ngModel)]="RestDetails.rating" class="form-control" placeholder="Ratings">
+        </div>
+        <div class="mb-3">
+            <input type="text" [(ngModel)]="RestDetails.img" class="form-control" placeholder="Image - URL">
+        </div>
+        <div class="mb-3">
+            <input type="text" [(ngModel)]="cuisinesInput" class="form-control" placeholder="Cuisines">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" [(ngModel)]="foodItemName" class="form-control" placeholder="Food Item Name">
+        </div>
+        <div class="mb-3">
+            <input type="number" [(ngModel)]="foodItemPrice" class="form-control" placeholder="Price">
+        </div>
+        <div>
+            <button class="btn btn-primary" (click)="addFoodItem()">Add Food Item</button>
+        </div>
+
+   
+        <div>
+            <button class="btn btn-warning btn-lg btn-block" (click)="addRest()">Create Restaurant</button>
+        </div>
+    </div>
+</div>
+<div id="search">
+    <button class="btn btn-success" routerLink="/rest-list" >View-Restaurant</button>
+</div>
+
+
